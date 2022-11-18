@@ -1,4 +1,4 @@
-//yes
+
 package Phrase_Solver;
 import java.util.Scanner;
 import java.io.File;
