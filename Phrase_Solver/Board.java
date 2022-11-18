@@ -100,6 +100,8 @@ private String loadPhrase()
         validInput = true;
       }
       }
+
+      
       guessedItems += guessLetter + ", ";
       
       while(phraseHolder.contains(guessLetter)) {

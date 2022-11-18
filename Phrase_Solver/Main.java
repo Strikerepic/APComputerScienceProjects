@@ -1,18 +1,17 @@
 package Phrase_Solver;
 import java.util.Scanner;
 
-import javafx.scene.layout.BorderStroke;
 public class Main {
     public static void main(String[] args) {  
 
         /*
-         * Code By Christian & Aditya!
+         * Code By Christian & Adi!
          * Christian's Work:
          * Underscore Generator
          * Guess Promt and Return new Board after guess + retured already guessed letters
          * 
-         * Aditya's Work:
-         * Player turn and winner detiminer. Setup when each player goes and how often depending on if they
+         * Adi's Work:
+         * Player turn, winner detiminer, and play again. Setup when each player goes and how often depending on if they
          * guess correctly.
          * 
          * 
@@ -40,7 +39,13 @@ public class Main {
 
         System.out.println("\nAlright Let's get guessing!");
 
-        while((Board.theBoard.contains("_"))) {
+
+
+
+
+
+        while(!(Board.theBoard.equals(Board.originalPhrase))) {
+           
             Board.changeTurn();
 
             if (Board.checkTurn()) {
@@ -50,14 +55,14 @@ public class Main {
                 System.out.println("Your turn " + player2.getName());
             }
 
-            System.out.println(Board.guessPrompt());
+               System.out.println(Board.guessPrompt());
             
-            System.out.println("\nYou have guessed the following letters:");
+               System.out.println("\nYou have guessed the following letters:");
 
-            System.out.println(Board.guessedItems + "\n\n");
+             System.out.println(Board.guessedItems + "\n\n");
 
             if(Board.theBoard.equals(Board.originalPhrase)) {
-                break;
+             break;
             }
         }
         
