@@ -27,6 +27,11 @@ public class Game {
             
             System.out.println("There are "+ pieces+" remaining!");
             System.out.println("How many pieces do you want to take?");
+            
+            while(!sc.hasNextInt()) {
+                System.out.println("Input is Not A Number!");
+                sc.nextLine();
+            }
             take = sc.nextInt();
         }
         //TO DO: Adjust the pieces
