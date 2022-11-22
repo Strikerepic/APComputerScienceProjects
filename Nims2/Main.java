@@ -30,7 +30,6 @@ public class Main {
 
             //TO DO: Set the a random player as the current player
             double goofyNumber = Math.random();
-               
             if(goofyNumber > 0.5) {
                     currentPlayer = p1;
                     game.setFirstPlayer(p1);
