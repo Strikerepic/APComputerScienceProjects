@@ -44,7 +44,7 @@ public class Main {
             //This is the loop in which the game will be played
 
             while(!game.isComplete()){
-               System.out.println("NEW");
+              
                 System.out.println(currentPlayer.getName() + " it's your turn!");
                 
 

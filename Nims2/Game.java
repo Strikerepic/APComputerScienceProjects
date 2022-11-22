@@ -26,7 +26,7 @@ public class Game {
         while (!isLegal(take)){
             
             System.out.println("There are "+ pieces+" remaining!");
-            System.out.println("How many pices do you want to take?");
+            System.out.println("How many pieces do you want to take?");
             take = sc.nextInt();
         }
         //TO DO: Adjust the pieces
