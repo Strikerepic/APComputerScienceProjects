@@ -30,7 +30,7 @@ public class StandardArrayAlgorithms
 
     
     System.out.println("All goals: " + sum);
-    System.out.println("AVG GOALS: " + avg);xzs
+    System.out.println("AVG GOALS: " + avg);
     System.out.println("MAX:" + max);
   }
   
