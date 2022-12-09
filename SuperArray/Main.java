@@ -123,7 +123,7 @@ public class Main {
 
     Thread.sleep(2000);
 
-    Graphics.readerDelay(Graphics.colorWhite("You take remove the VR headset. You are content with the work you have done...\n"), 20);
+    Graphics.readerDelay(Graphics.colorWhite("You remove the VR headset. You are content with the work you have done...\n"), 20);
 
     Graphics.readerDelay("You go to bed for the day.", 20);
 
@@ -132,9 +132,11 @@ public class Main {
     Graphics.randomText();
 
     Graphics.clearTerminal();
+    Graphics.clearTerminal();
 
-    Graphics.readerDelay("You wake up exhaused and weak. The VR experience has amde you ill.....\n",20);
-    Graphics.readerDelay("Your computer whirs to life unexpectedly. A message flashes across the screem.\n", 0);
+    Graphics.readerDelay("\n\n\n",20);
+    Graphics.readerDelay("You wake up exhaused and weak. The VR experience has made you ill.....\n",20);
+    Graphics.readerDelay("Your computer whirs to life unexpectedly. A message flashes across the screen.\n", 0);
     Graphics.enterToMove();
     Graphics.readerDelay("===============New Lessons Available===============\n\n",50);
     Thread.sleep(2500);
@@ -154,7 +156,7 @@ public class Main {
     String day2Input = sc.nextLine();
 
     if(day2Input.equals("1")) {
-        Graphics.readerDelay("Your VR headset flies off its stand and attaches itself to your head.", 20);
+        Graphics.readerDelay("Your VR headset flies off its stand and attaches itself to your head.\n\n", 20);
     }
     else{
         Graphics.readerDelay(Graphics.colorBoldRed("=======INVALID INPUT=======NOW AUTOCORRECTING======="), 50);
@@ -163,7 +165,7 @@ public class Main {
         Graphics.readerDelay("[1]\n", 1000);
         Graphics.readerDelay("[ENTER]\n", 5);
         Thread.sleep(1000);
-        Graphics.readerDelay("Your VR headset flies off its stand and attaches itself to your head.\n", 20);
+        Graphics.readerDelay("Your VR headset flies off its stand and attaches itself to your head.\n\n", 20);
     }
 
 
@@ -182,11 +184,11 @@ public class Main {
 
 
             Graphics.readerDelay("\t\t\t\t\\\\ Welcome back to the code editor agent " + p1.getPlayerName() + ".\n" , 20);
-            Graphics.readerDelay("\t\t\t\t\\\\ We have a very important lesson ahead of us agent." , 20);
+            Graphics.readerDelay("\t\t\t\t\\\\ We have a very important lesson ahead of us agent.\n" , 20);
             Graphics.enterToMove();
 
 
-            Graphics.readerDelay("\t\t int numList1[2] = 5;             \\\\ You can alter the data in an array like this.\n", 20);
+            Graphics.readerDelay("\t\t numList1[2] = 5;             \\\\ You can alter the data in an array like this.\n", 20);
             Graphics.readerDelay("\t\t\t\t\\\\ Firstly by selecting the index then setting the data you wish to replace with a simple function.\n" , 20);
             Graphics.enterToMove();
             Graphics.readerDelay("\t\t\t\t\\\\ NOW YOU TRY AGENT " + p1.getPlayerName() + " Alter the data in missleTargetCoordinates[] array.\n " , 20);
@@ -197,11 +199,11 @@ public class Main {
             boolean isValid3 = false;
     while(!(isValid3)) {
         String arrayWork2 = sc.nextLine();
-       if((arrayWork2.equals("missleTargetCoordinates[1] = -90.3968;")) || (arrayWork2.equals("missleTargetCoordinates[1]=-90.3968;")) ) {
-        isValid2 = true;
+       if((arrayWork2.equals("missleTargetCoordinates[1] = -90.3968;"))) {
+        isValid3 = true;
        }
        else {
-        isValid2 = false;
+        isValid3 = false;
         System.out.println("INCORRECT\n");
        }
     }
@@ -214,14 +216,15 @@ public class Main {
 
     Graphics.readerDelay("=============================================================\n", 20);
     Graphics.readerDelay("Message to send:\n", 10);
-    Graphics.readerDelay("Hey you should check out this new game called SuperArray. It's the most innovative code bassed game I've played in years. I'll send you the file now.\n",100);
+    Graphics.readerDelay("Hey you should check out this new game called SuperArray. It's the most innovative terminal bassed game I've played in years. I'll send you the file now.\n",100);
     Graphics.readerDelay("[ENTER]",250);
     System.out.println("\n\n\n\n\n\n");
 
     for(int i=0; i < 50; i++) {
-        Graphics.readerDelay("SENDING MESSAGE TO.... " + Graphics.randomMessageing(), 5);
+        Graphics.readerDelay("SENDING MESSAGE TO.... " + Graphics.randomMessageing() + "\n", 100);
     }
 
+    System.out.println("\n\n\n\n");
     Graphics.readerDelay("==========GAME BY CHRISTIAN BRENNAN==========", 500);
     Graphics.readerDelay("========GOOD WORK AGENT YOU HAVE BEATEN THE GAME==========", 500);
 
