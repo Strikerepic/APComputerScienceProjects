@@ -47,7 +47,7 @@ public class Main {
         while(gameActive == true) {
 
         System.out.println("================MEMORIZE THE LIST ================");
-        System.out.println(Guessing.printLetterList(choice,roundNum));
+       // System.out.println(Guessing.printLetterList(choice,roundNum));
         System.out.println("================MEMORIZE THE LIST================");
         
         
