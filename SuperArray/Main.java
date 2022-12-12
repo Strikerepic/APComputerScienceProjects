@@ -57,7 +57,7 @@ public class Main {
             Graphics.readerDelay("\t\t\t\t\t\t\\\\ in our case this array is called numList 1. It has a length of 4 and items 1,6,2 and 9.\n", 20);
             Graphics.readerDelay("\t\t\t\t\t\t\\\\ lets say I wanted to call the second piece of data in this array. I'd call it like this\n\n\n", 20);
             Graphics.enterToMove();
-            Graphics.readerDelay("\t\t numList1[1];             \\\\ When you call the index of an array it starts at 0. So in this case index 0 = #1 and index 2 = #6.\n", 20);
+            Graphics.readerDelay("\t\t numList1[1];             \\\\ When you call the index of an array it starts at 0. So in this case index 0 = #1 and index 1 = #6.\n", 20);
             Graphics.readerDelay("\t\t\t\t\t\t \\\\Now you try, grab the #9 from the numList1 array!\n\n", 20);
 
             
@@ -82,7 +82,7 @@ public class Main {
     Graphics.readerDelay("\t\t\t\t\t\t \\\\Once you do that, put the {} and everything insde followed by a , will create a new entity in said array.\n", 20);
     Graphics.readerDelay("\t\t\t\t\t\t \\\\Just somthing to note,  once you create an array you cannot change its size.\n", 20);
     Graphics.enterToMove();
-    Graphics.readerDelay("\t\t\t\t\t\t \\\\Make a double array called numList3 with the values 1.6   4,7   52.1   42.445  \n", 20);
+    Graphics.readerDelay("\t\t\t\t\t\t \\\\Make a double array called numList3 with the values 1.6   4.7   52.1   42.445  \n", 20);
 
 
 
@@ -91,7 +91,7 @@ public class Main {
             boolean isValid2 = false;
     while(!(isValid2)) {
         String arrayWork2 = sc.nextLine();
-       if(arrayWork2.equals("double numList3[] = {1.6,4.7,52.1,42.445};")) {
+       if((arrayWork2.equals("double numList3[] = {1.6,4.7,52.1,42.445};")) || (arrayWork2.equals("double numList3[] = {1.6, 4.7, 52.1, 42.445};"))) {
         isValid2 = true;
        }
        else {
@@ -174,7 +174,9 @@ public class Main {
             Graphics.clearTerminal();
             Graphics.readerDelay("\n\n\n================NOW CONNECTING TO SUPER ARRAY MAINFRAME================\n", 100);
             Thread.sleep(1200);
+            Graphics.clearTerminal();
             Graphics.randomText();
+            Graphics.clearTerminal();
             Graphics.clearTerminal();
             Graphics.readerDelay(Graphics.colorBoldGreen(Graphics.theSuperArrayLogo), 5);
             System.out.println(Graphics.colorBoldGreen("\n=============================================================="));
@@ -214,14 +216,14 @@ public class Main {
 
     Graphics.readerDelay("We need agents like you. Super Array is now indexing through your files to find more suitable cannidates. This process cannot be stopped.\n", 20);
 
-    Graphics.readerDelay("=============================================================\n", 20);
+    Graphics.readerDelay(Graphics.colorBoldGreen("=============================================================\n"), 20);
     Graphics.readerDelay("Message to send:\n", 10);
     Graphics.readerDelay("Hey you should check out this new game called SuperArray. It's the most innovative terminal bassed game I've played in years. I'll send you the file now.\n",100);
     Graphics.readerDelay("[ENTER]",250);
     System.out.println("\n\n\n\n\n\n");
 
     for(int i=0; i < 50; i++) {
-        Graphics.readerDelay("SENDING MESSAGE TO.... " + Graphics.randomMessageing() + "\n", 100);
+        Graphics.readerDelay("]SENDING MESSAGE TO.... " + Graphics.randomMessageing() + "\n]\n", 35);
     }
 
     System.out.println("\n\n\n\n");

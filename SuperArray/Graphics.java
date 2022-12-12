@@ -112,7 +112,7 @@ public void isValidInput(String validator) {
             System.out.print(randomParagraph);
         }
     }
-
+    //Aditya's work ends here; 
 
     public void clearTerminal() {
         System.out.println("\033[H\033[2J");
