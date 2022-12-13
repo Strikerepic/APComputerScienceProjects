@@ -231,6 +231,9 @@ public class Main {
     Graphics.readerDelay("==========GAME BY CHRISTIAN BRENNAN==========", 500);
     Graphics.readerDelay("========GOOD WORK AGENT YOU HAVE BEATEN THE GAME==========", 500);
 
+    Thread.sleep(2000);
+    Graphics.killGame();
+
     
     
 
