@@ -36,7 +36,7 @@ public class Main {
             Graphics.readerDelay("Yeah that one. Grab it and put it on.\n\n[1]Put ON the VR headset\n",20);
             Graphics.isValidInput("1");
             
-            
+            //Welcome to super array part
             Graphics.vrEntry();
             Thread.sleep(2000);
             Graphics.clearTerminal();
@@ -60,7 +60,7 @@ public class Main {
             Graphics.readerDelay("\t\t numList1[1];             \\\\ When you call the index of an array it starts at 0. So in this case index 0 = #1 and index 1 = #6.\n", 20);
             Graphics.readerDelay("\t\t\t\t\t\t \\\\Now you try, grab the #9 from the numList1 array!\n\n", 20);
 
-            
+            //HERE FOR FIRST QUESTION
             
             boolean isValid1 = false;
     while(!(isValid1)) {
@@ -87,7 +87,7 @@ public class Main {
 
 
     
-            
+            //Second Question 
             boolean isValid2 = false;
     while(!(isValid2)) {
         String arrayWork2 = sc.nextLine();
@@ -102,7 +102,7 @@ public class Main {
     }
 
 
-
+//End of day 1
     Graphics.readerDelay("\t\t\t\t\t\t \\\\Good Job!\n", 20);
 
     Thread.sleep(2000);
@@ -111,6 +111,7 @@ public class Main {
 
 
     for(int i = 0; i < 2; i++) {
+
 
         Graphics.readerDelay(Graphics.colorBlue(Graphics.introLogo()), 1);
         Thread.sleep(1500);
@@ -122,7 +123,7 @@ public class Main {
 
 
     Thread.sleep(2000);
-
+//Story until day 2
     Graphics.readerDelay(Graphics.colorWhite("You remove the VR headset. You are content with the work you have done...\n"), 20);
 
     Graphics.readerDelay("You go to bed for the day.", 20);
@@ -168,7 +169,7 @@ public class Main {
         Graphics.readerDelay("Your VR headset flies off its stand and attaches itself to your head.\n\n", 20);
     }
 
-
+//Welcome to day 2
     Graphics.vrEntry();
             Thread.sleep(2000);
             Graphics.clearTerminal();
@@ -197,7 +198,7 @@ public class Main {
             Graphics.readerDelay("\t\t\t\t\\\\ The previous agent lacked the skills you currently possess.....\n" , 50);
             Graphics.readerDelay("\t\t double missleTargetCoordinates[] = {38.6397, 1390.396858}             \\\\ The longitude for the target is incorrect. Change it to -90.3968.\n", 20);
             
-            
+            //Day 2 Question 1
             boolean isValid3 = false;
     while(!(isValid3)) {
         String arrayWork2 = sc.nextLine();

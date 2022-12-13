@@ -6,21 +6,38 @@ import java.nio.charset.Charset;
 import java.util.Scanner;
 
 public class Graphics {
+   
+   
+    /*
+     * Simply put, this class holds everything related to displaying
+     * Graphical stuff, So the reader delay function
+     * All of the title text stuff
+     * The notable examples are the enterToMove function (Just asks enter to move)
+     * Thats about it
+     * 
+     * 
+     */
+   
+   
+   
+   
+   
     Scanner sc = new Scanner(System.in);
 
-    public static final String BLACK = "\033[0;30m";   // BLACK
-    public static final String RED = "\033[0;31m";     // RED
-    public static final String GREEN = "\033[0;32m";   // GREEN
-    public static final String YELLOW = "\033[0;33m";  // YELLOW
-    public static final String BLUE = "\033[0;34m";    // BLUE
-    public static final String PURPLE = "\033[0;35m";  // PURPLE
-    public static final String CYAN = "\033[0;36m";    // CYAN
-    public static final String WHITE = "\033[0;37m";   // WHITE
-    public static final String GREEN_BOLD_BRIGHT = "\033[1;92m"; // GREEN
-    public static final String RED_BOLD_BRIGHT = "\033[1;91m";   // RED
+    private static final String BLACK = "\033[0;30m";   // BLACK
+    private static final String RED = "\033[0;31m";     // RED
+    private static final String GREEN = "\033[0;32m";   // GREEN
+    private static final String YELLOW = "\033[0;33m";  // YELLOW
+    private static final String BLUE = "\033[0;34m";    // BLUE
+    private static final String PURPLE = "\033[0;35m";  // PURPLE
+    private static final String CYAN = "\033[0;36m";    // CYAN
+    private static final String WHITE = "\033[0;37m";   // WHITE
+    private static final String GREEN_BOLD_BRIGHT = "\033[1;92m"; // GREEN
+    private static final String RED_BOLD_BRIGHT = "\033[1;91m";   // RED
+
 
    
-        
+    //Functions to grab color and add them to a string input
 
 public String coloRed(String input) {
     String output = RED + input;
@@ -58,7 +75,7 @@ public String colorWhite(String input) {
 }
 
     
-
+ //Super Array intro logo (Displayed after day 1 and start of day 1)
 public String introLogo() {
 
     String a = "\n$$$$$$\\                                                 $$$$$$\\                                         \n$$  __$$\\                                               $$  __$$\\                                        \n$$ /  \\__|$$\\   $$\\  $$$$$$\\   $$$$$$\\   $$$$$$\\        $$ /  $$ | $$$$$$\\   $$$$$$\\  $$$$$$\\  $$\\   $$\\ \n\\$$$$$$\\  $$ |  $$ |$$  __$$\\ $$  __$$\\ $$  __$$\\       $$$$$$$$ |$$  __$$\\ $$  __$$\\ \\____$$\\ $$ |  $$ |\n \\____$$\\ $$ |  $$ |$$ /  $$ |$$$$$$$$ |$$ |  \\__|      $$  __$$ |$$ |  \\__|$$ |  \\__|$$$$$$$ |$$ |  $$ |\n$$\\   $$ |$$ |  $$ |$$ |  $$ |$$   ____|$$ |            $$ |  $$ |$$ |      $$ |     $$  __$$ |$$ |  $$ |\n\\$$$$$$  |\\$$$$$$  |$$$$$$$  |\\$$$$$$$\\ $$ |            $$ |  $$ |$$ |      $$ |     \\$$$$$$$ |\\$$$$$$$ |\n \\______/  \\______/ $$  ____/  \\_______|\\__|            \\__|  \\__|\\__|      \\__|      \\_______| \\____$$ |\n                    $$ |                                                                       $$\\   $$ |\n                    $$ |                                                                       \\$$$$$$  |\n                    \\__|                                                                        \\______/";
@@ -66,12 +83,13 @@ public String introLogo() {
     return a;
 
 }
-
+// Asks enter to continue then it moves on
 public void enterToMove() {
     System.out.println("Press Enter to  Continue\n");
     sc.nextLine();
 }
 
+//Thought I'd use this more 
 public void isValidInput(String validator) {
 
     boolean isValid = false;
@@ -96,7 +114,7 @@ public void isValidInput(String validator) {
 }
 
 
-
+//The crazy text flash when you sleep and connect to super array mainframe
  // Part by Aditya
     public void randomText() {
         System.out.println("\033[H\033[2J");
@@ -114,14 +132,18 @@ public void isValidInput(String validator) {
     }
     //Aditya's work ends here; 
 
+    //It says what it does
     public void clearTerminal() {
         System.out.println("\033[H\033[2J");
     }
-
+//So the game ends 
     public void killGame() {
         System.exit(1);
     }
 
+
+
+    //Very special method, make the text print out all fancy like.
     public void readerDelay(String a, int delay) throws InterruptedException {
         for (int i = 0; i < a.length(); i++) {
             System.out.print(a.charAt(i));
@@ -130,14 +152,7 @@ public void isValidInput(String validator) {
     }
 
 
-
-    public void terminalCorrupt(int miliDelay ) {
-
-        
-        for(int i=1; i<miliDelay; i++) {
-            
-        }
-    }
+//Prints this out, the graphics displayed when you put on the vr headset
 
 
     public void vrEntry() {
@@ -163,21 +178,26 @@ public void isValidInput(String validator) {
 
     }
 
-    String LIST = "\t\t\t\tfahjkfgesnageyuoabifs;iuenvai;fuj;jafjfalealfhje\n\t\t\t\tzsdfgvbh[------------------------------]ftyujhjj\n \t\t\t\trghbghjm|a;sljdf;asjdf;lajsd;fljksjd;as|jkl*jh^%\n\t\t\t\tsjknrkgg|ajsdf;asjkdf;lajsdkfl;askl;djf|kqwdjaja\n\t\t\t\tanjksfda|juhwqp98u343qiw&*T(UIHUkjl;af|78HJKHbn%\n\t\t\t\tuywrqqwq|zbhuvsoeaigjw;nafsldjfak;lsjdf|kasdajas\n\t\t\t\tja;skldf|iqowafjknsvfai;oslkiowaoijafsf|235&*^(s\n\t\t\t\tnegijaff|28u94q3oiaefhjwknsdofjf;asdfkf|ksdjajas\n\t\t\t\tvfadjklf|zxnmczljbkoarg98834750qyuahfi*|ksdjajas\n\t\t\t\tasfaksjl|(*Y&TYGUBHN:JBHLGOUYFIWI:HWEFK|2sj;ajas\n\t\t\t\tasjd;jkj|JOIUHO*&(U)IOHBIHUjas;dlkfaks;|kswerjas\n\t\t\t\tvnzqurye|j:IUHY*&T^%FRCTUGVUBOHA(PHIOBG|HJK(&^bn\n\t\t\t\tlksdjaja|NOJIHUBIGYVFTCYDRX^ED%YTU^IY&U|YUIT&*^n\n\t\t\t\tlksdjaja|NIOUBYI&T*^&FRUTCFYVIGUOUYGITF|&G*VN<>T\n\t\t\t\tlksdjaja|U*Y(&^FTVGYGOGYGYGY(G*&*UJHJ:K|wercv&ss\n\t\t\t\tlksdjaja|JIOU(H*)&(^FT&VYUB*)&&^*%RTFYG|67g*UOHH\n\t\t\t\tlksdjaja|NU*&^(*%DRCTVYGBUNIOIUYHJKHJHK|&*(^YHNM\n\t\t\t\tfahjkfges------------------------------]lealfhj)\n(\t\t\t\tzsdfgvbhjuhgvcfaeuinvpuihaefufihtghjiuhgftyujhjj\n";    
+    //Same thing put in one string
+   
+    String LIST = "\t\t\t\tfahjkfgesnageyuoabifs;iuenvai;fuj;jafjfalealfhje\n\t\t\t\tzsdfgvbh[------------------------------]ftyujhjj\n \t\t\t\trghbghjm|a;sljdf;asjdf;lajsd;fljksjd;as|jkl*jh^%\n\t\t\t\tsjknrkgg|ajsdf;asjkdf;lajsdkfl;askl;djf|kqwdjaja\n\t\t\t\tanjksfda|juhwqp98u343qiw&*T(UIHUkjl;af|78HJKHbn%\n\t\t\t\tuywrqqwq|zbhuvsoeaigjw;nafsldjfak;lsjdf|kasdajas\n\t\t\t\tja;skldf|iqowafjknsvfai;oslkiowaoijafsf|235&*^(s\n\t\t\t\tnegijaff|28u94q3oiaefhjwknsdofjf;asdfkf|ksdjajas\n\t\t\t\tvfadjklf|zxnmczljbkoarg98834750qyuahfi*|ksdjajas\n\t\t\t\tasfaksjl|(*Y&TYGUBHN:JBHLGOUYFIWI:HWEFK|2sj;ajas\n\t\t\t\tasjd;jkj|JOIUHO*&(U)IOHBIHUjas;dlkfaks;|kswerjas\n\t\t\t\tvnzqurye|j:IUHY*&T^%FRCTUGVUBOHA(PHIOBG|HJK(&^bn\n\t\t\t\tlksdjaja|NOJIHUBIGYVFTCYDRX^ED%YTU^IY&U|YUIT&*^n\n\t\t\t\tlksdjaja|NIOUBYI&T*^&FRUTCFYVIGUOUYGITF|&G*VN<>T\n\t\t\t\tlksdjaja|U*Y(&^FTVGYGOGYGYGY(G*&*UJHJ:K|wercv&ss\n\t\t\t\tlksdjaja|JIOU(H*)&(^FT&VYUB*)&&^*%RTFYG|67g*UOHH\n\t\t\t\tlksdjaja|NU*&^(*%DRCTVYGBUNIOIUYHJKHJHK|&*(^YHNM\n\t\t\t\tfahjkfges------------------------------]lealfhj)\n(\t\t\t\tzsdfgvbhjuhgvcfaeuinvpuihaefufihtghjiuhgftyujhjj\n"; 
+    
+    //In SuperArrayMainframe the logo at the top
     String theSuperArrayLogo = "\n  _____                          ___                         \n  / ___/__  ______  ___  _____   /   |  ______________ ___  __\n  \\__ \\/ / / / __ \\/ _ \\/ ___/  / /| | / ___/ ___/ __ `/ / / /\n ___/ / /_/ / /_/ /  __/ /     / ___ |/ /  / /  / /_/ / /_/ / \n/____/\\__,_/ .___/\\___/_/     /_/  |_/_/  /_/   \\__,_/\\__, /  \n          /_/                                        /____/";
 
-
+//Skips line
     public void SkLN() {
         System.out.println("\n");
     }
 
 
-
+//Prints just the super
     public String superArraySuper() {                                                                                     
    String theSuper = "\nSSSSSSSSSSSSSSS                                                                                 \nSS:::::::::::::::S                                                                               \nS:::::SSSSSS::::::S                                                                               \nS:::::S     SSSSSSS                                                                               \nS:::::S            uuuuuu    uuuuuu ppppp   ppppppppp       eeeeeeeeeeee    rrrrr   rrrrrrrrr     \nS:::::S            u::::u    u::::u p::::ppp:::::::::p    ee::::::::::::ee  r::::rrr:::::::::r     \nS::::SSSS         u::::u    u::::u p:::::::::::::::::p  e::::::eeeee:::::eer:::::::::::::::::r     \nSS::::::SSSSS    u::::u    u::::u pp::::::ppppp::::::pe::::::e     e:::::err::::::rrrrr::::::r      \nSSS::::::::SS  u::::u    u::::u  p:::::p     p:::::pe:::::::eeeee::::::e r:::::r     r:::::r         \nSSSSSS::::S u::::u    u::::u  p:::::p     p:::::pe:::::::::::::::::e  r:::::r     rrrrrrr              \nS:::::Su::::u    u::::u  p:::::p     p:::::pe::::::eeeeeeeeeee   r:::::r                          \nS:::::Su:::::uuuu:::::u  p:::::p    p::::::pe:::::::e            r:::::r              \nSSSSSSS     S:::::Su:::::::::::::::uup:::::ppppp:::::::pe::::::::e           r:::::r              \nS::::::SSSSSS:::::S u:::::::::::::::up::::::::::::::::p  e::::::::eeeeeeee   r:::::r              \nS:::::::::::::::SS   uu::::::::uu:::up::::::::::::::pp    ee:::::::::::::e   r:::::r               \nSSSSSSSSSSSSSSS       uuuuuuuu  uuuup::::::pppppppp        eeeeeeeeeeeeee   rrrrrrr                                                   \np:::::p                                                                                           \np:::::p                                                                                          \np:::::::p                                                                                         \np:::::::p                                                                                         \np:::::::p                                                                                         \nppppppppp";
    return theSuper;
     }
 
+    //Prints just the array
     public String superArrayArray() {                                                                                                          
 String a ="               \nAAA                                                                                                          \nA:::A                                                                                                        \nA:::::A                                                                                                      \nA:::::::A                                                                                                    \nA:::::::::A          rrrrr   rrrrrrrrr   rrrrr   rrrrrrrrr   aaaaaaaaaaaaayyyyyyy           yyyyyyy          \nA:::::A:::::A         r::::rrr:::::::::r  r::::rrr:::::::::r  a::::::::::::ay:::::y         y:::::y          \nA:::::A A:::::A        r:::::::::::::::::r r:::::::::::::::::r aaaaaaaaa:::::ay:::::y       y:::::y          \nA:::::A   A:::::A       rr::::::rrrrr::::::rrr::::::rrrrr::::::r         a::::a y:::::y     y:::::y          \nA:::::A     A:::::A       r:::::r     r:::::r r:::::r     r:::::r  aaaaaaa:::::a  y:::::y   y:::::y          \nA:::::AAAAAAAAA:::::A      r:::::r     rrrrrrr r:::::r     rrrrrrraa::::::::::::a   y:::::y y:::::y          \nA:::::::::::::::::::::A     r:::::r             r:::::r           a::::aaaa::::::a    y:::::y:::::y          \nA:::::AAAAAAAAAAAAA:::::A    r:::::r             r:::::r          a::::a    a:::::a     y:::::::::y          \nA:::::A             A:::::A   r:::::r             r:::::r          a::::a    a:::::a      y:::::::y          \nA:::::A               A:::::A  r:::::r             r:::::r          a:::::aaaa::::::a       y:::::y          \nA:::::A                 A:::::A r:::::r             r:::::r           a::::::::::aa:::a     y:::::y          \nAAAAAAA                   AAAAAAArrrrrrr             rrrrrrr            aaaaaaaaaa  aaaa    y:::::y                                                                                                      \ny:::::y                                                                                                      \ny:::::y                                                                                                      \ny:::::y                                                                                                      \ny:::::y                                                                                                      \nyyyyyyy";
 return a;
@@ -185,7 +205,7 @@ return a;
 
 
 
-
+//Math.random was being very strange, couldnt find a viable method to chnage int to string ;(. Had to do this. Not good.
     public String randomMessageing() {
 
         int firstSet = (int) (Math.random() * 19);
