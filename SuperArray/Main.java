@@ -151,7 +151,7 @@ public class Main {
     Graphics.readerDelay("RECONNECT TO THE SUPER ARRAY MAINFRAME IMMEDIATELY\n", 100);
     Graphics.enterToMove();
     Graphics.clearTerminal();
-    Graphics.readerDelay(Graphics.colorWhite("[1] Put On VR Headset\n[2] Refuse...\n"), 50);
+    Graphics.readerDelay(Graphics.colorWhite("[1] Put On VR Headset\n[2] Refuse...\n"), 150);
 
     
     String day2Input = sc.nextLine();

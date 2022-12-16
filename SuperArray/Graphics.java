@@ -12,7 +12,7 @@ public class Graphics {
      * Simply put, this class holds everything related to displaying
      * Graphical stuff, So the reader delay function
      * All of the title text stuff
-     * The notable examples are the enterToMove function (Just asks enter to move)
+     * The notable exceptions are the enterToMove function (Just asks enter to move)
      * Thats about it
      * 
      * 
