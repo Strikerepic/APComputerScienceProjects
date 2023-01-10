@@ -39,8 +39,12 @@ public class RandomPermRunner
 
     for(int i = 0; i<10; i = i+2) {
 
+      try {
         System.out.println("Ladies and Gentlemen, " + horsesArray.get(i) + " and " + horsesArray.get(i +1) + "  are partners!!!" );
-
+      } catch (Exception e) {
+        System.out.println(horsesArray.get(i) + " is alone" );
+      }
+        
     }
 
 
