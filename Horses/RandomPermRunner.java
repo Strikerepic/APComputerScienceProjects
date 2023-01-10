@@ -6,7 +6,9 @@ public class RandomPermRunner
 {
   public static void main(String[] args)
   {
-    int[] randNums = RandomPermutation.next(10);
+
+    int horseSise = 11;
+    int[] randNums = RandomPermutation.next(horseSise);
     
     ArrayList<String> horsesArray = new ArrayList<String>();
      
@@ -15,10 +17,10 @@ public class RandomPermRunner
 
     
 
-    String horseNames[] = {"null", "Horse1","Horse2","Horse3","Horse4","Horse5","Horse6","Horse7","Horse8","Horse9","Horse10"};
+    String horseNames[] = {"null", "Horse1","Horse2","Horse3","Horse4","Horse5","Horse6","Horse7","Horse8","Horse9","Horse10","Horse11"};
 
 
-    for(int i = 0; i < 10; i++) {
+    for(int i = 0; i < horseSise; i++) {
 
         int hold = randNums[i];
 
@@ -37,7 +39,7 @@ public class RandomPermRunner
 
 
 
-    for(int i = 0; i<10; i = i+2) {
+    for(int i = 0; i<horseSise; i = i+2) {
 
       try {
         System.out.println("Ladies and Gentlemen, " + horsesArray.get(i) + " and " + horsesArray.get(i +1) + "  are partners!!!" );
