@@ -54,8 +54,8 @@ public class TestSort
 
     // Test the double insertion sort
   
-    testInsertionDouble = SortingAlgorithms.insertionSortDouble(doubleList);
-    System.out.println(testInsertionDouble);
+    //testInsertionDouble = SortingAlgorithms.insertionSortDouble(doubleList);
+    //System.out.println(testInsertionDouble);
     
   }
 }

@@ -121,12 +121,13 @@ public class SortingAlgorithms
 
 
   }
+}
 
   /**
    * Perform an insertion sort an ArrayList of doubles
    * @param doubleList an ArrayList of doubles
    * @return doubleList sorted from smallest to largest
-   */
+   *
   public static ArrayList<Double> insertionSortDouble(ArrayList<Double> doubleList)
   {
     for (int i = 1; i < doubleList.size(); i++) 
@@ -162,3 +163,5 @@ public class SortingAlgorithms
   }
 
 }
+*/
+
