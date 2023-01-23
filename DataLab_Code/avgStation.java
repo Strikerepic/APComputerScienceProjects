@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 
-public class leastFavStation {
+public class avgStation {
 
     public static void main(String args[]) {
       String hateState = "";
@@ -22,7 +22,7 @@ public class leastFavStation {
 
              
 
-             System.out.println("What is your least favorite state (Abriviated)?");
+             System.out.println("Type state(Abriviated) to find its average temp. across all stations.");
              hateState = sc.nextLine();
              
 
