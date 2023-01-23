@@ -36,7 +36,7 @@ public class avgStation {
                 ds1.load();
                 float temp = ds1.fetchFloat("temp_f");
                 hateStateTemps.add(temp);
-                System.out.println("Jail!");
+                System.out.println("Grabbing Data!");
               }
            }
 
