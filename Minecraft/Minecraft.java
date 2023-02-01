@@ -21,6 +21,10 @@ System.out.println("          `---'                                             
 
 
 
+System.out.println("\n\n\n");
+
+
+
 
         System.out.println("Man, I really want to get a diamond sword for timmy's birthday!");
         System.out.println("Luckily im in a time vacuum and I have an unlimited amount of time to get this sword!");
