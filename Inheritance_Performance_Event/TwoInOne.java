@@ -22,5 +22,10 @@ public class TwoInOne extends Laptop {
     }
 
 
+    public void touchTouchScreen() {
+        System.out.println("You touched it");
+    }
+
+
     
 }

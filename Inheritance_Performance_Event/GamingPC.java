@@ -13,6 +13,10 @@ public class GamingPC extends Desktop {
     public int getPower() {
         return power;
     }
+
+    public void blueScreen() {
+        System.out.println("The screened turned blue 😭😭😭");
+    }
     
-    
+
 }
